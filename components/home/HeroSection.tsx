@@ -44,12 +44,12 @@ export default function HeroSection() {
 
             {/* Doctor Quick Badge */}
             <div className="p-4 rounded-2xl bg-white/80 border border-brand-border shadow-subtle flex flex-col sm:flex-row items-center gap-4 max-w-lg mx-auto lg:mx-0 text-left">
-              <div className="relative w-14 h-14 rounded-xl overflow-hidden bg-brand-orange-50 border border-brand-orange-200 shrink-0 p-1 flex items-center justify-center">
+              <div className="relative w-14 h-14 shrink-0 flex items-center justify-center">
                 <Image
                   src="/images/logo.png"
                   alt="Rohith Reddy Hospitals Emblem"
-                  width={48}
-                  height={48}
+                  width={56}
+                  height={56}
                   className="object-contain"
                 />
               </div>
@@ -136,7 +136,7 @@ export default function HeroSection() {
 
                 <div className="relative z-10 flex flex-col items-center text-center">
                   {/* Official Logo Display */}
-                  <div className="relative w-48 h-48 sm:w-56 sm:h-56 mb-6 p-2 bg-white rounded-2xl shadow-sm border border-brand-border">
+                  <div className="relative w-48 h-48 sm:w-56 sm:h-56 mb-6">
                     <Image
                       src="/images/logo.png"
                       alt="Rohith Reddy Hospitals Official Brand"

@@ -30,7 +30,7 @@ export default function AboutPage() {
         <div className="hospital-card p-8 sm:p-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             <div className="lg:col-span-4 text-center">
-              <div className="relative w-44 h-44 mx-auto mb-6 bg-white rounded-3xl p-3 shadow-sm border border-brand-border">
+              <div className="relative w-44 h-44 mx-auto mb-6">
                 <Image
                   src="/images/logo.png"
                   alt="Dr. Rohith Reddy Yata"

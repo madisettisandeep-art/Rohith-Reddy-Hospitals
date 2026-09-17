@@ -31,7 +31,7 @@ export default function DoctorProfilePage() {
         <div className="hospital-card p-8 sm:p-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             <div className="lg:col-span-5 text-center">
-              <div className="relative w-52 h-52 mx-auto mb-6 bg-white rounded-3xl p-3 shadow-md border border-brand-border">
+              <div className="relative w-52 h-52 mx-auto mb-6">
                 <Image
                   src="/images/logo.png"
                   alt="Dr. Rohith Reddy Yata Emblem"

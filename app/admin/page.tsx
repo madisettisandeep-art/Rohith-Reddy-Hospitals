@@ -125,12 +125,12 @@ export default function AdminDashboardPage() {
         {/* Top Header */}
         <div className="hospital-card p-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-4">
-            <div className="relative w-12 h-12 rounded-xl bg-white p-1 border border-brand-border shrink-0">
+            <div className="relative w-14 h-14 shrink-0">
               <Image
                 src="/images/logo.png"
                 alt="Rohith Reddy Hospitals Logo"
                 fill
-                sizes="48px"
+                sizes="56px"
                 className="object-contain"
               />
             </div>

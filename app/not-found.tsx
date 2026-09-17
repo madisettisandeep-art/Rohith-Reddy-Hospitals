@@ -8,12 +8,12 @@ export default function NotFound() {
   return (
     <div className="min-h-[70vh] flex items-center justify-center py-16 px-4 sm:px-6 lg:px-8 bg-[#FFFCF8]">
       <div className="hospital-card p-8 sm:p-12 text-center max-w-lg mx-auto space-y-6">
-        <div className="relative w-24 h-24 mx-auto bg-white rounded-2xl p-2 shadow-xs border border-brand-border">
+        <div className="relative w-28 h-28 mx-auto">
           <Image
             src="/images/logo.png"
             alt="Rohith Reddy Hospitals Logo"
             fill
-            sizes="96px"
+            sizes="112px"
             className="object-contain"
           />
         </div>

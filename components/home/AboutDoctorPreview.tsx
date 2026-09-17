@@ -17,12 +17,12 @@ export default function AboutDoctorPreview() {
               </div>
 
               {/* Official Brand Emblem Display */}
-              <div className="relative w-36 h-36 mx-auto mb-6 bg-white rounded-2xl p-2 shadow-sm border border-brand-border">
+              <div className="relative w-40 h-40 mx-auto mb-6">
                 <Image
                   src="/images/logo.png"
                   alt="Dr. Rohith Reddy Yata - Rohith Reddy Hospitals"
                   fill
-                  sizes="144px"
+                  sizes="160px"
                   className="object-contain"
                 />
               </div>

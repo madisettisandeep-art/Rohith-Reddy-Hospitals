@@ -49,12 +49,12 @@ export default function Footer() {
         {/* Brand & Doctor Info */}
         <div className="lg:col-span-2 space-y-4">
           <Link href="/" className="inline-flex items-center gap-3 group">
-            <div className="relative w-14 h-14 shrink-0 rounded-2xl overflow-hidden bg-white p-1 shadow-sm border border-brand-border">
+            <div className="relative w-16 h-16 shrink-0">
               <Image
                 src="/images/logo.png"
                 alt="Rohith Reddy Hospitals Logo"
                 fill
-                sizes="56px"
+                sizes="64px"
                 className="object-contain"
               />
             </div>

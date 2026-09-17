@@ -42,12 +42,12 @@ export default function AdminLoginPage() {
     <div className="min-h-[80vh] flex items-center justify-center py-16 px-4 bg-[#FFFCF8]">
       <div className="hospital-card p-8 sm:p-10 w-full max-w-md space-y-6">
         <div className="text-center space-y-2">
-          <div className="relative w-20 h-20 mx-auto bg-white rounded-2xl p-2 shadow-xs border border-brand-border">
+          <div className="relative w-24 h-24 mx-auto">
             <Image
               src="/images/logo.png"
               alt="Rohith Reddy Hospitals Logo"
               fill
-              sizes="80px"
+              sizes="96px"
               className="object-contain"
             />
           </div>

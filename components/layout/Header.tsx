@@ -61,10 +61,10 @@ export default function Header() {
           {/* Official Logo Brand Asset */}
           <Link
             href="/"
-            className="flex items-center group focus:outline-none focus:ring-2 focus:ring-brand-orange-500 rounded-xl p-1 transition-transform hover:scale-[1.02]"
+            className="flex items-center group focus:outline-none focus:ring-2 focus:ring-brand-orange-500 rounded-lg p-0.5 transition-transform hover:scale-[1.03]"
             aria-label="Rohith Reddy Hospitals Homepage"
           >
-            <div className="relative w-14 h-14 sm:w-16 sm:h-16 shrink-0 rounded-2xl overflow-hidden bg-white p-1 shadow-xs border border-brand-border/60 group-hover:border-brand-orange-300 transition-colors">
+            <div className="relative w-14 h-14 sm:w-16 sm:h-16 shrink-0">
               <Image
                 src="/images/logo.png"
                 alt="Rohith Reddy Hospitals Official Logo"

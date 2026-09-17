@@ -26,12 +26,12 @@ export default function AboutHospitalPage() {
 
         {/* Hero Card */}
         <div className="hospital-card p-8 sm:p-12 text-center max-w-4xl mx-auto space-y-6">
-          <div className="relative w-36 h-36 mx-auto bg-white rounded-3xl p-2 shadow-sm border border-brand-border">
+          <div className="relative w-40 h-40 mx-auto">
             <Image
               src="/images/logo.png"
               alt="Rohith Reddy Hospitals Official Logo"
               fill
-              sizes="144px"
+              sizes="160px"
               className="object-contain"
             />
           </div>
