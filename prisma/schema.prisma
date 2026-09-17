@@ -1,0 +1,143 @@
+// Prisma schema for Rohith Reddy Hospitals Production Database
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum AppointmentStatus {
+  PENDING
+  CONFIRMED
+  COMPLETED
+  CANCELLED
+}
+
+enum PatientType {
+  NEW
+  EXISTING
+}
+
+enum UserRole {
+  SUPER_ADMIN
+  ADMIN
+  STAFF
+}
+
+model Doctor {
+  id                    String        @id @default(uuid())
+  name                  String
+  salutation            String        @default("Dr.")
+  designation           String
+  degrees               String
+  experienceYears       Int
+  registrationNumber    String?
+  biography             String[]
+  focusAreas            String[]
+  languages             String[]
+  consultationTimings   String
+  avatarUrl             String?
+  createdAt             DateTime      @default(now())
+  updatedAt             DateTime      @updatedAt
+  appointments          Appointment[]
+
+  @@index([name])
+}
+
+model MedicalService {
+  id                  String        @id @default(uuid())
+  title               String
+  slug                String        @unique
+  shortDescription    String
+  detailedDescription String
+  keyFeatures         String[]
+  iconName            String
+  category            String
+  verified            Boolean       @default(true)
+  createdAt           DateTime      @default(now())
+  updatedAt           DateTime      @updatedAt
+  appointments        Appointment[]
+
+  @@index([slug])
+  @@index([category])
+}
+
+model Appointment {
+  id             String            @id @default(uuid())
+  bookingRef     String            @unique
+  patientName    String
+  mobileNumber   String
+  email          String?
+  preferredDate  DateTime
+  preferredTime  String
+  reasonForVisit String
+  patientType    PatientType       @default(NEW)
+  status         AppointmentStatus @default(PENDING)
+  notes          String?
+  doctorId       String?
+  doctor         Doctor?           @relation(fields: [doctorId], references: [id])
+  serviceId      String?
+  service        MedicalService?   @relation(fields: [serviceId], references: [id])
+  createdAt      DateTime          @default(now())
+  updatedAt      DateTime          @updatedAt
+
+  @@index([preferredDate])
+  @@index([mobileNumber])
+  @@index([status])
+  @@index([createdAt])
+}
+
+model GoogleReviewCache {
+  id                     String   @id @default(uuid())
+  externalReviewId       String?  @unique
+  authorName             String
+  rating                 Int      @default(5)
+  relativeTimeDescription String
+  text                   String
+  authorPhotoUrl         String?
+  verifiedTheme          String   @default("general")
+  createdAt              DateTime @default(now())
+
+  @@index([rating])
+}
+
+model HospitalSetting {
+  id             String   @id @default("default")
+  phone          String   @default("+919642002222")
+  phoneDisplay   String   @default("+91 96420 02222")
+  whatsappNumber String   @default("919642002222")
+  email          String   @default("care@rohithreddyhospitals.com")
+  operatingHours String   @default("24 Hours Open")
+  announcement   String?
+  announcementOn Boolean  @default(true)
+  updatedAt      DateTime @updatedAt
+}
+
+model AdminUser {
+  id           String     @id @default(uuid())
+  username     String     @unique
+  passwordHash String
+  name         String
+  role         UserRole   @default(STAFF)
+  createdAt    DateTime   @default(now())
+  auditLogs    AuditLog[]
+
+  @@index([username])
+}
+
+model AuditLog {
+  id         String     @id @default(uuid())
+  userId     String?
+  user       AdminUser? @relation(fields: [userId], references: [id])
+  action     String
+  entityType String
+  entityId   String?
+  details    Json?
+  ipAddress  String?
+  createdAt  DateTime   @default(now())
+
+  @@index([createdAt])
+  @@index([action])
+}

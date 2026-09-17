@@ -1,0 +1,83 @@
+{
+  "appointments": [
+    {
+      "patientName": "Ramesh Kumar",
+      "mobileNumber": "9849012345",
+      "preferredDate": "2026-09-20",
+      "preferredTime": "Morning",
+      "reasonForVisit": "Routine glucose check",
+      "patientType": "new",
+      "serviceType": "Diabetes Management",
+      "id": "RRH-2026-004",
+      "status": "pending",
+      "createdAt": "2026-09-17T05:56:39.109Z"
+    },
+    {
+      "id": "RRH-2026-001",
+      "patientName": "K. Ramesh",
+      "mobileNumber": "+91 98490 11223",
+      "email": "ramesh.k@example.com",
+      "preferredDate": "2026-09-18",
+      "preferredTime": "10:30 AM",
+      "reasonForVisit": "Routine Diabetes checkup & HbA1c review",
+      "patientType": "existing",
+      "serviceType": "Diabetes Management",
+      "status": "confirmed",
+      "notes": "Prior patient with Dr. Rohith Reddy. Follow-up after 3 months.",
+      "createdAt": "2026-09-17T08:30:00.000Z"
+    },
+    {
+      "id": "RRH-2026-002",
+      "patientName": "P. Sunitha",
+      "mobileNumber": "+91 94400 45678",
+      "preferredDate": "2026-09-18",
+      "preferredTime": "11:15 AM",
+      "reasonForVisit": "Persistent fever and fatigue over past 3 days",
+      "patientType": "new",
+      "serviceType": "General Physician Care",
+      "status": "pending",
+      "createdAt": "2026-09-17T09:45:00.000Z"
+    },
+    {
+      "id": "RRH-2026-003",
+      "patientName": "V. Satyanarayana",
+      "mobileNumber": "+91 98850 78901",
+      "preferredDate": "2026-09-19",
+      "preferredTime": "06:00 PM",
+      "reasonForVisit": "Chest heaviness and ECG evaluation",
+      "patientType": "new",
+      "serviceType": "ECG / Heart Health Assessment",
+      "status": "confirmed",
+      "createdAt": "2026-09-17T10:15:00.000Z"
+    }
+  ],
+  "settings": {
+    "name": "Rohith Reddy Hospitals",
+    "tagline": "Healthier Lives. Brighter Tomorrows.",
+    "phone": "+919642002222",
+    "phoneDisplay": "+91 96420 02222",
+    "whatsappNumber": "919642002222",
+    "email": "care@rohithreddyhospitals.com",
+    "address": {
+      "line1": "Teacher's Colony, Pranay Marg",
+      "line2": "Waddepally, Phase 1",
+      "area": "Subedari",
+      "phase": "Phase 1",
+      "suburb": "Subedari",
+      "city": "Hanamkonda",
+      "state": "Telangana",
+      "postalCode": "506370",
+      "googleMapsUrl": "https://maps.google.com/?q=Rohith+Reddy+Hospitals+Subedari+Hanamkonda+Telangana+506370",
+      "directionsQuery": "Rohith Reddy Hospitals, Teacher's Colony, Pranay Marg, Waddepally, Phase 1, Subedari, Hanamkonda, Telangana 506370"
+    },
+    "operatingHours": "24 Hours Open (Consultation & Clinical Services)",
+    "emergencyNotice": "For critical trauma or immediate life-threatening emergencies, please proceed immediately to the nearest tertiary trauma center or dial 108.",
+    "announcementText": "Appointments available for General Medicine & Diabetology consultations with Dr. Rohith Reddy Yata. Call +91 96420 02222.",
+    "announcementActive": true,
+    "googleRating": 4.9,
+    "googleReviewCount": 674,
+    "instagramHandle": "@drrohithreddy_yata",
+    "instagramUrl": "https://www.instagram.com/drrohithreddy_yata"
+  },
+  "lastUpdated": "2026-09-17T05:54:51.991Z"
+}
