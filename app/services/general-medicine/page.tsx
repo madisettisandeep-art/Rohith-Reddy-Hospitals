@@ -41,7 +41,7 @@ export default function GeneralMedicinePage() {
               General Physician Care &amp; Clinical Medicine
             </h1>
             <p className="text-sm sm:text-base text-brand-secondaryText leading-relaxed">
-              Led by {verifiedDoctorProfile.name} (MBBS, 12 years clinical experience), our General Medicine practice offers methodical diagnostic evaluations and compassionate care for acute and chronic adult illnesses in Hanamkonda.
+              Led by {verifiedDoctorProfile.name} ({verifiedDoctorProfile.degrees}, 12 years clinical experience), our General Medicine practice offers methodical diagnostic evaluations and compassionate care for acute and chronic adult illnesses in Hanamkonda.
             </p>
             <div className="pt-2 flex flex-wrap gap-3">
               <Link href="/appointments" className="btn-primary py-3 px-6 text-xs uppercase tracking-wider">

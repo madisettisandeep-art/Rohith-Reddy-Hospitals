@@ -1,22 +1,13 @@
 # Rohith Reddy Hospitals - Web Application
 
-A modern, production-ready, ultra-fast healthcare web application built for **Rohith Reddy Hospitals** and **Dr. Rohith Reddy Yata** (General Physician & Diabetologist, MBBS, 12 years clinical experience) located in Subedari, Hanamkonda, Telangana.
+A modern, production-ready, ultra-fast healthcare web application built for **Rohith Reddy Hospitals** and **Dr. Rohith Reddy Yata** (MD, General Physician & Diabetologist, 12 years clinical experience) located in Subedari, Hanamkonda, Telangana.
 
 ---
 
 ## 🏥 Brand & Visual Identity
 
 - **Official Brand Emblem**: Preserved directly from the supplied `Logo.png` without alteration.
-- **Brand Palette**:
-  - **Primary Orange**: `#F47A16` (CTAs, key highlights, badges)
-  - **Deep Orange**: `#C84E08` (Hover states, gradient endpoints)
-  - **Warm Copper**: `#A94712` (Serif subheadings & display accents)
-  - **Beige / Gold**: `#E8D2A8` (Cards borders & pill highlights)
-  - **Warm Cream**: `#FFF9F0` (Card backgrounds)
-  - **Warm White**: `#FFFCF8` (Page background)
-  - **Dark Text**: `#2B211B` (High-contrast typography)
-  - **Secondary Text**: `#6F6258` (Body & descriptions)
-  - **Border Tone**: `#E9DED0`
+- **Brand Palette**: Medical Blue (`#1D4ED8`), Deep Navy (`#10355D`), clean slates, and warm whites.
 - **The Four Pillars**: People, Compassion, Excellence, Better Health.
 
 ---
@@ -25,7 +16,7 @@ A modern, production-ready, ultra-fast healthcare web application built for **Ro
 
 1. **Home** (`/`): The 16-step sequence including announcement bar, sticky header with logo, hero, trust bar (4.9★ Google rating), doctor profile preview, verified services grid, diabetes care pathway, diagnostic highlights (12-lead ECG & blood group analysis), patient experience, Google reviews, appointment CTA, lightweight click-to-load map, Instagram presence, and categorized FAQ.
 2. **About Overview** (`/about`): Introduction to Dr. Rohith Reddy Yata & the hospital.
-3. **Doctor Profile** (`/about/dr-rohith-reddy`): Detailed verified profile (MBBS, 12 years experience, focus areas, consultation timings).
+3. **Doctor Profile** (`/about/dr-rohith-reddy`): Detailed verified profile (MD, General Physician & Diabetologist, 12 years experience, focus areas, consultation timings).
 4. **About Hospital** (`/about/hospital`): Facility history, values, and location overview.
 5. **Specialities** (`/specialities`): Clinical departments catalog.
 6. **Services Directory** (`/services`): Outpatient services directory.

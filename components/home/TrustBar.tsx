@@ -47,7 +47,7 @@ export default function TrustBar({
                 General Physician
               </div>
               <div className="text-xs font-medium text-brand-orange-700">
-                &amp; Diabetologist (MBBS)
+                &amp; Diabetologist (MD)
               </div>
             </div>
           </div>

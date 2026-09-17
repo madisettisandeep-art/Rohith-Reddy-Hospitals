@@ -7,9 +7,9 @@ import { verifiedDoctorProfile, hospitalSettings } from '@/lib/data/hospital-dat
 import { generateWhatsAppBookingUrl } from '@/lib/whatsapp/helpers';
 
 export const metadata: Metadata = {
-  title: 'Dr. Rohith Reddy Yata | General Physician & Diabetologist | MBBS',
+  title: 'Dr. Rohith Reddy Yata | MD, General Physician & Diabetologist',
   description:
-    'Profile of Dr. Rohith Reddy Yata (MBBS, 12 years experience), leading General Physician & Diabetologist at Rohith Reddy Hospitals in Subedari, Hanamkonda.',
+    'Profile of Dr. Rohith Reddy Yata (MD, 12 years experience), leading General Physician & Diabetologist at Rohith Reddy Hospitals in Subedari, Hanamkonda.',
 };
 
 export default function DoctorProfilePage() {

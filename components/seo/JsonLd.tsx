@@ -57,7 +57,7 @@ export default function JsonLd() {
         },
         alumniOf: {
           '@type': 'EducationalOrganization',
-          name: 'Medical Council of India recognized Medical College (MBBS)',
+          name: 'Medical Council of India recognized Medical College (MD, General Medicine)',
         },
       },
     ],

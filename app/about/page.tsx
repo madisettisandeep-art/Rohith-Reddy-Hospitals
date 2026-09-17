@@ -8,7 +8,7 @@ import { verifiedDoctorProfile, hospitalSettings } from '@/lib/data/hospital-dat
 export const metadata: Metadata = {
   title: 'About Us | Rohith Reddy Hospitals & Dr. Rohith Reddy Yata',
   description:
-    'Learn about Rohith Reddy Hospitals and Dr. Rohith Reddy Yata (General Physician & Diabetologist, MBBS, 12 years experience) in Hanamkonda.',
+    'Learn about Rohith Reddy Hospitals and Dr. Rohith Reddy Yata (MD, General Physician & Diabetologist, 12 years experience) in Hanamkonda.',
 };
 
 export default function AboutPage() {

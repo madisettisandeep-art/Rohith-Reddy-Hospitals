@@ -33,7 +33,7 @@ export const verifiedDoctorProfile: DoctorProfile = {
   name: 'Dr. Rohith Reddy Yata',
   salutation: 'Dr.',
   designation: 'General Physician & Diabetologist',
-  degrees: 'MBBS',
+  degrees: 'MD',
   experienceYears: 12,
   biography: [
     'Dr. Rohith Reddy Yata is a seasoned General Physician and Diabetologist with over 12 years of clinical experience in comprehensive patient care, internal medicine, and metabolic disorder management in Hanamkonda.',
