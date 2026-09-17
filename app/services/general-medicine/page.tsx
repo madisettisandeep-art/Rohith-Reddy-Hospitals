@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Stethoscope, CheckCircle2, Phone, Calendar, ArrowRight, Clock, ShieldCheck } from 'lucide-react';
 import { verifiedDoctorProfile, hospitalSettings } from '@/lib/data/hospital-data';
 
@@ -21,7 +22,7 @@ export default function GeneralMedicinePage() {
   ];
 
   return (
-    <div className="py-12 sm:py-20 bg-[#FFFCF8]">
+    <div className="py-12 sm:py-20 bg-[#F8FAFC]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         {/* Breadcrumb */}
         <nav className="text-xs text-brand-secondaryText flex items-center gap-2">
@@ -70,12 +71,34 @@ export default function GeneralMedicinePage() {
 
         {/* Doctor Consultation Flow */}
         <div className="hospital-card p-8 space-y-4">
-          <h2 className="font-display font-bold text-xl text-brand-darkText">
-            What to Expect During Your General Physician Consultation
-          </h2>
-          <p className="text-xs sm:text-sm text-brand-secondaryText leading-relaxed">
-            During your visit, Dr. Rohith Reddy takes comprehensive notes of your symptoms, temperature and blood pressure trends, medical history, and daily routine. Where necessary, primary diagnostic tests such as ECG or blood profiling are carried out on-site for prompt diagnosis and targeted medication.
-          </p>
+          <div className="flex flex-col sm:flex-row items-center gap-6">
+            <div className="relative w-28 h-28 sm:w-32 sm:h-32 shrink-0 rounded-2xl overflow-hidden border-2 border-brand-orange-200 shadow-md">
+              <Image
+                src="/images/dr-rohith-reddy-portrait.webp"
+                alt="Dr. Rohith Reddy Yata"
+                fill
+                sizes="128px"
+                className="object-cover object-top"
+              />
+            </div>
+            <div className="space-y-2 text-center sm:text-left">
+              <span className="badge-warm">Consulting Physician</span>
+              <h2 className="font-display font-bold text-xl text-brand-darkText">
+                Consultation with {verifiedDoctorProfile.name}
+              </h2>
+              <p className="text-xs sm:text-sm text-brand-secondaryText leading-relaxed">
+                During your visit, Dr. Rohith Reddy takes comprehensive notes of your symptoms, temperature and blood pressure trends, medical history, and daily routine. Where necessary, primary diagnostic tests such as ECG or blood profiling are carried out on-site for prompt diagnosis and targeted medication.
+              </p>
+              <div className="pt-2 flex flex-wrap gap-2 justify-center sm:justify-start">
+                <Link href="/appointments" className="btn-primary py-2 px-4 text-xs font-semibold">
+                  Book Consultation
+                </Link>
+                <Link href="/about/dr-rohith-reddy" className="btn-secondary py-2 px-4 text-xs font-semibold">
+                  View Doctor Profile
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

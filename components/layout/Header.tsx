@@ -52,8 +52,8 @@ export default function Header() {
     <header
       className={`sticky top-0 z-50 w-full transition-all duration-300 ${
         isScrolled
-          ? 'bg-[#FFFCF8]/95 backdrop-blur-md shadow-sm border-b border-brand-border/80 py-2.5'
-          : 'bg-[#FFFCF8] border-b border-brand-border/40 py-3.5'
+          ? 'bg-[#F8FAFC]/95 backdrop-blur-md shadow-sm border-b border-brand-border/80 py-2.5'
+          : 'bg-[#F8FAFC] border-b border-brand-border/40 py-3.5'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -99,7 +99,7 @@ export default function Header() {
 
                   {/* Dropdown Menu */}
                   <div
-                    className={`absolute left-0 top-full mt-1 w-56 bg-[#FFF9F0] border border-brand-border rounded-xl shadow-lg p-2 transition-all duration-200 ${
+                    className={`absolute left-0 top-full mt-1 w-56 bg-[#F0F6FC] border border-brand-border rounded-xl shadow-lg p-2 transition-all duration-200 ${
                       servicesDropdown
                         ? 'opacity-100 visible translate-y-0'
                         : 'opacity-0 invisible -translate-y-2 pointer-events-none'
@@ -188,7 +188,7 @@ export default function Header() {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden border-t border-brand-border/80 bg-[#FFF9F0] px-4 pt-3 pb-6 space-y-2 shadow-xl animate-in slide-in-from-top-2 duration-200">
+        <div className="lg:hidden border-t border-brand-border/80 bg-[#F0F6FC] px-4 pt-3 pb-6 space-y-2 shadow-xl animate-in slide-in-from-top-2 duration-200">
           <nav className="flex flex-col space-y-1 text-base font-medium text-brand-darkText">
             {navLinks.map((link) => (
               <React.Fragment key={link.name}>

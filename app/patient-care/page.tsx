@@ -35,7 +35,7 @@ export default function PatientCarePage() {
   ];
 
   return (
-    <div className="py-12 sm:py-20 bg-[#FFFCF8]">
+    <div className="py-12 sm:py-20 bg-[#F8FAFC]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
         {/* Breadcrumb */}
         <nav className="text-xs text-brand-secondaryText flex items-center gap-2">
@@ -69,7 +69,7 @@ export default function PatientCarePage() {
         </div>
 
         {/* Testimonial highlight */}
-        <div className="hospital-card p-8 sm:p-10 bg-[#FFF9F0] border-brand-beige text-center max-w-3xl mx-auto space-y-4">
+        <div className="hospital-card p-8 sm:p-10 bg-[#F0F6FC] border-brand-beige text-center max-w-3xl mx-auto space-y-4">
           <span className="text-xs font-bold text-brand-copper uppercase tracking-wider">
             Verified Patient Feedback
           </span>

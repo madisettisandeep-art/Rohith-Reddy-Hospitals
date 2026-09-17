@@ -1,5 +1,6 @@
 import React from 'react';
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import AppointmentForm from '@/components/appointments/AppointmentForm';
 import { Phone, Clock, MapPin, ShieldCheck, CheckCircle2 } from 'lucide-react';
 import { hospitalSettings, verifiedDoctorProfile } from '@/lib/data/hospital-data';
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function AppointmentsPage() {
   return (
-    <div className="py-12 sm:py-16 bg-[#FFFCF8]">
+    <div className="py-12 sm:py-16 bg-[#F8FAFC]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-12">
@@ -33,6 +34,30 @@ export default function AppointmentsPage() {
 
           {/* Consultation Guidelines Sidebar */}
           <div className="lg:col-span-5 space-y-6">
+            {/* Consulting Doctor Profile Mini-Card */}
+            <div className="hospital-card p-5 flex items-center gap-4">
+              <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-brand-orange-200 shrink-0 shadow-xs">
+                <Image
+                  src="/images/dr-rohith-reddy.webp"
+                  alt={verifiedDoctorProfile.name}
+                  fill
+                  sizes="64px"
+                  className="object-cover"
+                />
+              </div>
+              <div>
+                <span className="text-[10px] font-bold uppercase tracking-wider text-brand-orange-700 bg-brand-orange-50 px-2 py-0.5 rounded-full">
+                  Consulting Physician
+                </span>
+                <div className="font-display font-bold text-base text-brand-darkText mt-1">
+                  {verifiedDoctorProfile.name}
+                </div>
+                <div className="text-xs text-brand-secondaryText">
+                  {verifiedDoctorProfile.designation} &bull; {verifiedDoctorProfile.degrees}
+                </div>
+              </div>
+            </div>
+
             <div className="hospital-card p-6 sm:p-8 space-y-5">
               <h2 className="font-display font-bold text-xl text-brand-darkText">
                 Consultation Information
@@ -98,7 +123,7 @@ export default function AppointmentsPage() {
             </div>
 
             {/* Privacy note */}
-            <div className="p-4 rounded-2xl bg-[#FFF9F0] border border-brand-border/80 flex items-center gap-2.5 text-xs text-brand-secondaryText">
+            <div className="p-4 rounded-2xl bg-[#F0F6FC] border border-brand-border/80 flex items-center gap-2.5 text-xs text-brand-secondaryText">
               <ShieldCheck className="w-5 h-5 text-brand-copper shrink-0" />
               <span>
                 Your contact details are strictly confidential and used solely for appointment coordination.

@@ -28,7 +28,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="py-16 sm:py-24 bg-[#FFFDF9] border-t border-brand-border/60" id="faq">
+    <section className="py-16 sm:py-24 bg-[#FFFFFF] border-t border-brand-border/60" id="faq">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-3">
           <span className="badge-warm">Got Questions?</span>

@@ -13,7 +13,7 @@ export default function TrustBar({
   reviewCount = hospitalSettings.googleReviewCount,
 }: TrustBarProps) {
   return (
-    <section className="border-y border-brand-border bg-[#FFFDF9] py-6 shadow-xs">
+    <section className="border-y border-brand-border bg-[#FFFFFF] py-6 shadow-xs">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center divide-y md:divide-y-0 md:divide-x divide-brand-border/80">
           {/* Trust Element 1: Google Rating & dynamic review count */}

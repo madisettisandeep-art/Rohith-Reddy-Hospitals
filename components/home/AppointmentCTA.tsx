@@ -8,7 +8,7 @@ export default function AppointmentCTA() {
   const whatsappUrl = generateWhatsAppBookingUrl(hospitalSettings.whatsappNumber);
 
   return (
-    <section className="py-16 sm:py-24 bg-[#FFFCF8]" id="book-cta">
+    <section className="py-16 sm:py-24 bg-[#F8FAFC]" id="book-cta">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative rounded-3xl bg-gradient-to-r from-brand-orange-600 via-brand-orange-500 to-brand-copper text-white p-8 sm:p-12 lg:p-16 shadow-2xl overflow-hidden">
           {/* Subtle decorative background light */}

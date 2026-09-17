@@ -13,7 +13,7 @@ const iconMap: Record<string, React.ReactNode> = {
 
 export default function ServicesGrid() {
   return (
-    <section className="py-16 sm:py-24 bg-[#FFFCF8]" id="services">
+    <section className="py-16 sm:py-24 bg-[#F8FAFC]" id="services">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-3">

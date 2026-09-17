@@ -3,16 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --color-brand-orange: #F47A16;
-  --color-brand-deep-orange: #C84E08;
-  --color-brand-copper: #A94712;
-  --color-brand-beige: #E8D2A8;
-  --color-brand-light-beige: #F5EBDD;
-  --color-brand-cream: #FFF9F0;
-  --color-brand-warm-white: #FFFCF8;
-  --color-brand-dark-text: #2B211B;
-  --color-brand-secondary-text: #6F6258;
-  --color-brand-border: #E9DED0;
+  --color-brand-orange: #1D4ED8;
+  --color-brand-deep-orange: #1E40AF;
+  --color-brand-copper: #10355D;
+  --color-brand-beige: #E2E8F0;
+  --color-brand-light-beige: #F1F5F9;
+  --color-brand-cream: #F8FAFC;
+  --color-brand-warm-white: #FFFFFF;
+  --color-brand-dark-text: #0F172A;
+  --color-brand-secondary-text: #475569;
+  --color-brand-border: #E2E8F0;
 }
 
 @layer base {
@@ -31,49 +31,49 @@
 
   /* Custom selection */
   ::selection {
-    background-color: #FED0AA;
-    color: #7F340D;
+    background-color: #DBEAFE;
+    color: #1E40AF;
   }
 
   /* Accessible focus indicators */
   :focus-visible {
-    outline: 2px solid #F47A16;
+    outline: 2px solid #2563EB;
     outline-offset: 2px;
   }
 }
 
 @layer components {
   .hospital-card {
-    background-color: var(--color-brand-cream);
+    background-color: #FFFFFF;
     border: 1px solid var(--color-brand-border);
     border-radius: 20px;
-    box-shadow: 0 4px 20px -2px rgba(169, 71, 18, 0.04), 0 2px 6px -1px rgba(43, 33, 27, 0.02);
+    box-shadow: 0 4px 20px -2px rgba(16, 53, 93, 0.05), 0 2px 6px -1px rgba(15, 23, 42, 0.03);
     transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
   }
 
   .hospital-card:hover {
-    border-color: #E8D2A8;
+    border-color: #93C5FD;
     transform: translateY(-2px);
-    box-shadow: 0 12px 28px -4px rgba(244, 122, 22, 0.08), 0 4px 10px -2px rgba(43, 33, 27, 0.04);
+    box-shadow: 0 12px 28px -4px rgba(29, 78, 216, 0.12), 0 4px 10px -2px rgba(15, 23, 42, 0.05);
   }
 
   .btn-primary {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: #F47A16;
+    background-color: #10355D;
     color: #FFFFFF;
     font-weight: 600;
     border-radius: 9999px;
     padding: 0.75rem 1.5rem;
     transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-    box-shadow: 0 4px 14px 0 rgba(244, 122, 22, 0.3);
+    box-shadow: 0 4px 14px 0 rgba(16, 53, 93, 0.3);
   }
 
   .btn-primary:hover {
-    background-color: #DE640B;
+    background-color: #174A82;
     transform: translateY(-1px);
-    box-shadow: 0 6px 20px 0 rgba(244, 122, 22, 0.4);
+    box-shadow: 0 6px 20px 0 rgba(29, 78, 216, 0.35);
   }
 
   .btn-primary:active {
@@ -85,8 +85,8 @@
     align-items: center;
     justify-content: center;
     background-color: #FFFFFF;
-    color: #C84E08;
-    border: 1.5px solid #F47A16;
+    color: #10355D;
+    border: 1.5px solid #10355D;
     font-weight: 600;
     border-radius: 9999px;
     padding: 0.75rem 1.5rem;
@@ -94,9 +94,9 @@
   }
 
   .btn-secondary:hover {
-    background-color: #FFF5ED;
-    border-color: #DE640B;
-    color: #A94712;
+    background-color: #EFF6FF;
+    border-color: #1D4ED8;
+    color: #1D4ED8;
   }
 
   .btn-secondary:active {
@@ -106,9 +106,9 @@
   .badge-warm {
     display: inline-flex;
     align-items: center;
-    background-color: #FFF5ED;
-    color: #C84E08;
-    border: 1px solid #FED0AA;
+    background-color: #EFF6FF;
+    color: #1D4ED8;
+    border: 1px solid #BFDBFE;
     font-weight: 600;
     font-size: 0.75rem;
     text-transform: uppercase;

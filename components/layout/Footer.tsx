@@ -9,7 +9,7 @@ export default function Footer() {
   const whatsappUrl = generateWhatsAppBookingUrl(hospitalSettings.whatsappNumber);
 
   return (
-    <footer className="bg-[#FFF9F0] border-t border-brand-border text-brand-darkText pt-16 pb-24 lg:pb-12 mt-16">
+    <footer className="bg-[#F0F6FC] border-t border-brand-border text-brand-darkText pt-16 pb-24 lg:pb-12 mt-16">
       {/* Top Banner CTA */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-14">
         <div className="bg-gradient-to-r from-brand-orange-600 via-brand-orange-500 to-brand-copper rounded-3xl p-8 sm:p-10 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
@@ -28,7 +28,7 @@ export default function Footer() {
           <div className="flex flex-col sm:flex-row gap-3 shrink-0 w-full sm:w-auto">
             <Link
               href="/appointments"
-              className="inline-flex items-center justify-center bg-white text-brand-orange-700 font-bold px-6 py-3.5 rounded-full shadow-md hover:bg-amber-50 transition-all text-sm uppercase tracking-wider"
+              className="inline-flex items-center justify-center bg-white text-brand-orange-700 font-bold px-6 py-3.5 rounded-full shadow-md hover:bg-blue-50 transition-all text-sm uppercase tracking-wider"
             >
               <Calendar className="w-4 h-4 mr-2 text-brand-orange-600" />
               Book Appointment
@@ -211,9 +211,36 @@ export default function Footer() {
         </div>
       </div>
 
+      {/* Patient Safety Ribbon directly inspired by the official Brand Asset */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
+        <div className="rounded-2xl bg-[#10355D] text-white p-6 shadow-md border border-[#0B2440]">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center divide-y md:divide-y-0 md:divide-x divide-white/15">
+            <div className="flex flex-col items-center justify-center p-2">
+              <span className="text-xs font-bold uppercase tracking-wider text-white">Patients</span>
+              <span className="text-[11px] text-sky-200">Are at the Centre</span>
+            </div>
+            <div className="flex flex-col items-center justify-center p-2 pt-4 md:pt-2">
+              <span className="text-xs font-bold uppercase tracking-wider text-white">Safer</span>
+              <span className="text-[11px] text-sky-200">Clinical Practices</span>
+            </div>
+            <div className="flex flex-col items-center justify-center p-2 pt-4 md:pt-2">
+              <span className="text-xs font-bold uppercase tracking-wider text-white">Stronger</span>
+              <span className="text-[11px] text-sky-200">Healthy Communities</span>
+            </div>
+            <div className="flex flex-col items-center justify-center p-2 pt-4 md:pt-2">
+              <span className="text-xs font-bold uppercase tracking-wider text-white">Brighter</span>
+              <span className="text-[11px] text-sky-200">Healthier Tomorrows</span>
+            </div>
+          </div>
+          <div className="mt-4 pt-3 border-t border-white/10 text-center text-[11px] uppercase tracking-widest text-sky-200 font-semibold">
+            Because Every Patient Matters
+          </div>
+        </div>
+      </div>
+
       {/* Mandatory Statutory Medical Disclaimer */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-brand-border/70">
-        <div className="bg-[#FFF5ED] border border-brand-orange-200/60 rounded-2xl p-5 text-xs text-brand-secondaryText leading-relaxed">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pt-8 border-t border-brand-border/70">
+        <div className="bg-[#EFF6FF] border border-brand-orange-200/60 rounded-2xl p-5 text-xs text-brand-secondaryText leading-relaxed">
           <div className="flex items-center gap-2 font-semibold text-brand-orange-800 mb-1">
             <ShieldCheck className="w-4 h-4 text-brand-orange-600" />
             <span>Important Medical Notice &amp; Disclaimer</span>

@@ -28,7 +28,7 @@ export default function DiabetesCareHighlight() {
   ];
 
   return (
-    <section className="py-16 sm:py-24 bg-[#FFF9F0] border-y border-brand-border/80">
+    <section className="py-16 sm:py-24 bg-[#F0F6FC] border-y border-brand-border/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Column: Heading & Context */}

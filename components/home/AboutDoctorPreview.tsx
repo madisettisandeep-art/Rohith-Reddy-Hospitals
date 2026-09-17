@@ -6,24 +6,25 @@ import { verifiedDoctorProfile, hospitalSettings } from '@/lib/data/hospital-dat
 
 export default function AboutDoctorPreview() {
   return (
-    <section className="py-16 sm:py-20 bg-[#FFFDF9] border-b border-brand-border/60">
+    <section className="py-16 sm:py-20 bg-[#FFFFFF] border-b border-brand-border/60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Column: Authentic Doctor Profile Card with Official Brand Asset */}
           <div className="lg:col-span-5">
-            <div className="relative rounded-3xl bg-gradient-to-b from-[#FFF9F0] to-white border border-brand-beige p-8 shadow-card overflow-hidden text-center">
+            <div className="relative rounded-3xl bg-gradient-to-b from-[#F0F6FC] to-white border border-brand-beige p-8 shadow-card overflow-hidden text-center">
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-orange-50 border border-brand-orange-200 text-xs font-bold text-brand-orange-700 uppercase tracking-wider mb-6">
                 <Award className="w-3.5 h-3.5" /> Verified Medical Professional
               </div>
 
-              {/* Official Brand Emblem Display */}
-              <div className="relative w-40 h-40 mx-auto mb-6">
+              {/* Authentic Doctor Portrait Display */}
+              <div className="relative w-44 h-44 mx-auto mb-6 rounded-2xl overflow-hidden shadow-md border-2 border-brand-orange-200">
                 <Image
-                  src="/images/logo.png"
-                  alt="Dr. Rohith Reddy Yata - Rohith Reddy Hospitals"
+                  src="/images/dr-rohith-reddy.webp"
+                  alt={`Dr. Rohith Reddy Yata - ${verifiedDoctorProfile.designation}`}
                   fill
-                  sizes="160px"
-                  className="object-contain"
+                  sizes="176px"
+                  className="object-cover"
+                  priority
                 />
               </div>
 
@@ -103,7 +104,7 @@ export default function AboutDoctorPreview() {
             </div>
 
             {/* Verified Bio Excerpt */}
-            <div className="p-5 rounded-2xl bg-[#FFF9F0] border border-brand-beige/80 text-xs sm:text-sm text-brand-secondaryText leading-relaxed space-y-2">
+            <div className="p-5 rounded-2xl bg-[#F0F6FC] border border-brand-beige/80 text-xs sm:text-sm text-brand-secondaryText leading-relaxed space-y-2">
               <p>
                 &ldquo;Every patient deserves attentive listening, meticulous examination, and clear guidance. Effective healing begins when patients fully comprehend their diagnosis and feel confident in their wellness journey.&rdquo;
               </p>

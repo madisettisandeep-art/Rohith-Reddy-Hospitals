@@ -16,7 +16,7 @@ export default function DoctorProfilePage() {
   const whatsappUrl = generateWhatsAppBookingUrl(hospitalSettings.whatsappNumber);
 
   return (
-    <div className="py-12 sm:py-20 bg-[#FFFCF8]">
+    <div className="py-12 sm:py-20 bg-[#F8FAFC]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         {/* Breadcrumb */}
         <nav className="text-xs text-brand-secondaryText flex items-center gap-2">
@@ -31,13 +31,13 @@ export default function DoctorProfilePage() {
         <div className="hospital-card p-8 sm:p-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             <div className="lg:col-span-5 text-center">
-              <div className="relative w-52 h-52 mx-auto mb-6">
+              <div className="relative w-56 h-64 mx-auto mb-6 rounded-2xl overflow-hidden shadow-lg border-2 border-brand-orange-200">
                 <Image
-                  src="/images/logo.png"
-                  alt="Dr. Rohith Reddy Yata Emblem"
+                  src="/images/dr-rohith-reddy-portrait.webp"
+                  alt={`Dr. Rohith Reddy Yata - ${verifiedDoctorProfile.designation}`}
                   fill
-                  sizes="208px"
-                  className="object-contain"
+                  sizes="224px"
+                  className="object-cover object-top"
                   priority
                 />
               </div>

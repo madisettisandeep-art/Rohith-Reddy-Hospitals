@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Activity, CheckCircle2, Phone, Calendar, ArrowRight, ShieldCheck, Heart, AlertCircle } from 'lucide-react';
 import { verifiedDoctorProfile, hospitalSettings } from '@/lib/data/hospital-data';
 
@@ -25,17 +26,17 @@ export default function DiabetesCarePage() {
       desc: 'Realistic, sustainable carbohydrate monitoring, meal portioning, and physical activity planning tailored to South Indian dietary preferences.',
     },
     {
-      title: '4. Continuous Long-Term Monitoring',
-      desc: 'Regular quarterly benchmarking of glycemic metrics, kidney markers, lipid profiles, and blood pressure equilibrium.',
+      title: '4. Microvascular & Organ Protection Screening',
+      desc: 'Routine protocols for diabetic nephropathy (kidney tests), diabetic retinopathy checks, and peripheral neuropathy foot examinations.',
     },
     {
-      title: '5. Preventive Complication Screening',
-      desc: 'Proactive foot examinations, peripheral sensory assessments, and cardiovascular risk stratification to prevent long-term diabetic complications.',
+      title: '5. Continuous Glycemic Tracking & Long-Term Support',
+      desc: 'Regular follow-up appointments and clear escalation guidance to prevent severe hypoglycemic or hyperglycemic episodes.',
     },
   ];
 
   return (
-    <div className="py-12 sm:py-20 bg-[#FFFCF8]">
+    <div className="py-12 sm:py-20 bg-[#F8FAFC]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         {/* Breadcrumb */}
         <nav className="text-xs text-brand-secondaryText flex items-center gap-2">
@@ -46,7 +47,7 @@ export default function DiabetesCarePage() {
           <span className="text-brand-darkText font-semibold">Diabetes Care</span>
         </nav>
 
-        {/* Hero */}
+        {/* Hero Banner */}
         <div className="hospital-card p-8 sm:p-12">
           <div className="max-w-3xl space-y-4">
             <span className="badge-warm">Diabetology Department</span>
@@ -68,7 +69,7 @@ export default function DiabetesCarePage() {
         </div>
 
         {/* Responsible Medical Notice */}
-        <div className="p-5 rounded-2xl bg-[#FFF5ED] border border-brand-orange-200 text-xs text-brand-secondaryText flex items-start gap-3">
+        <div className="p-5 rounded-2xl bg-[#EFF6FF] border border-brand-orange-200 text-xs text-brand-secondaryText flex items-start gap-3">
           <ShieldCheck className="w-5 h-5 text-brand-orange-600 shrink-0 mt-0.5" />
           <div>
             <span className="font-bold text-brand-darkText block mb-0.5">
@@ -99,6 +100,38 @@ export default function DiabetesCarePage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* Doctor Consultation Flow */}
+        <div className="hospital-card p-8 space-y-4">
+          <div className="flex flex-col sm:flex-row items-center gap-6">
+            <div className="relative w-28 h-28 sm:w-32 sm:h-32 shrink-0 rounded-2xl overflow-hidden border-2 border-brand-orange-200 shadow-md">
+              <Image
+                src="/images/dr-rohith-reddy-portrait.webp"
+                alt="Dr. Rohith Reddy Yata - Diabetologist"
+                fill
+                sizes="128px"
+                className="object-cover object-top"
+              />
+            </div>
+            <div className="space-y-2 text-center sm:text-left">
+              <span className="badge-warm">Lead Diabetologist</span>
+              <h2 className="font-display font-bold text-xl text-brand-darkText">
+                Direct Consultation with {verifiedDoctorProfile.name}
+              </h2>
+              <p className="text-xs sm:text-sm text-brand-secondaryText leading-relaxed">
+                With over a decade of clinical experience in metabolic disorders and chronic diabetes management, Dr. Rohith Reddy takes time to understand your lifestyle, nutrition, and blood glucose trends to create a realistic, personalized treatment plan.
+              </p>
+              <div className="pt-2 flex flex-wrap gap-2 justify-center sm:justify-start">
+                <Link href="/appointments" className="btn-primary py-2 px-4 text-xs font-semibold">
+                  Book Consultation
+                </Link>
+                <Link href="/about/dr-rohith-reddy" className="btn-secondary py-2 px-4 text-xs font-semibold">
+                  View Doctor Profile
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
 

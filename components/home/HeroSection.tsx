@@ -43,14 +43,14 @@ export default function HeroSection() {
             </p>
 
             {/* Doctor Quick Badge */}
-            <div className="p-4 rounded-2xl bg-white/80 border border-brand-border shadow-subtle flex flex-col sm:flex-row items-center gap-4 max-w-lg mx-auto lg:mx-0 text-left">
-              <div className="relative w-14 h-14 shrink-0 flex items-center justify-center">
+            <div className="p-4 rounded-2xl bg-white/90 border border-brand-border shadow-subtle flex flex-col sm:flex-row items-center gap-4 max-w-lg mx-auto lg:mx-0 text-left">
+              <div className="relative w-14 h-14 shrink-0 rounded-full overflow-hidden border-2 border-brand-orange-200 shadow-xs">
                 <Image
-                  src="/images/logo.png"
-                  alt="Rohith Reddy Hospitals Emblem"
+                  src="/images/dr-rohith-reddy.webp"
+                  alt={verifiedDoctorProfile.name}
                   width={56}
                   height={56}
-                  className="object-contain"
+                  className="object-cover w-full h-full"
                 />
               </div>
               <div>
@@ -126,82 +126,91 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Right Column: Premium Healthcare Visual & Brand Identity Card */}
+          {/* Right Column: Premium Healthcare Visual & Authentic Doctor Portrait */}
           <div className="lg:col-span-5 relative">
             <div className="relative mx-auto max-w-md lg:max-w-none">
-              {/* Premium Brand Display Card */}
-              <div className="relative rounded-3xl bg-gradient-to-b from-white via-brand-cream to-white p-6 sm:p-8 border border-brand-beige shadow-card overflow-hidden">
+              {/* Premium Healthcare Doctor Card */}
+              <div className="relative rounded-3xl bg-white p-5 sm:p-7 border border-brand-border shadow-card overflow-hidden">
                 {/* Decorative background radial pattern */}
-                <div className="absolute -top-12 -right-12 w-48 h-48 bg-brand-orange-100/50 rounded-full blur-2xl" />
+                <div className="absolute -top-12 -right-12 w-48 h-48 bg-brand-orange-100/40 rounded-full blur-2xl pointer-events-none" />
 
-                <div className="relative z-10 flex flex-col items-center text-center">
-                  {/* Official Logo Display */}
-                  <div className="relative w-48 h-48 sm:w-56 sm:h-56 mb-6">
+                <div className="relative z-10 flex flex-col items-center">
+                  {/* High Quality Doctor Portrait Showcase */}
+                  <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden mb-4 shadow-sm border border-brand-border">
                     <Image
-                      src="/images/logo.png"
-                      alt="Rohith Reddy Hospitals Official Brand"
+                      src="/images/dr-rohith-reddy-portrait.webp"
+                      alt="Dr. Rohith Reddy Yata - General Physician & Diabetologist"
                       fill
-                      sizes="(max-width: 640px) 192px, 224px"
-                      className="object-contain"
+                      sizes="(max-width: 640px) 100vw, 420px"
+                      className="object-cover object-top"
                       priority
                     />
+                    {/* Floating Clinical Excellence Pill */}
+                    <div className="absolute bottom-3 left-3 right-3 bg-white/95 backdrop-blur-sm border border-brand-border/80 rounded-xl px-3 py-2 flex items-center justify-between shadow-xs">
+                      <div>
+                        <div className="text-xs font-bold text-brand-darkText">{verifiedDoctorProfile.name}</div>
+                        <div className="text-[10px] font-semibold text-brand-orange-700">{verifiedDoctorProfile.designation}</div>
+                      </div>
+                      <span className="inline-flex items-center text-[10px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded-full">
+                        Verified
+                      </span>
+                    </div>
                   </div>
 
-                  <span className="text-xs uppercase tracking-widest text-brand-copper font-bold">
-                    Center for General Medicine &amp; Diabetology
-                  </span>
-                  <h3 className="font-display font-bold text-2xl text-brand-darkText mt-1">
-                    Rohith Reddy Hospitals
-                  </h3>
-                  <p className="text-xs text-brand-secondaryText mt-1">
-                    Subedari, Hanamkonda, Telangana
-                  </p>
+                  <div className="w-full text-left">
+                    <div className="text-[11px] uppercase tracking-wider text-brand-copper font-bold">
+                      Rohith Reddy Hospitals &bull; Hanamkonda
+                    </div>
+                    <p className="text-xs text-brand-secondaryText mt-1">
+                      &ldquo;Safe Patients. Stronger Healthcare. Better Living.&rdquo;
+                    </p>
+                  </div>
 
-                  {/* 4 Brand Pillars Mini Badges */}
-                  <div className="grid grid-cols-2 gap-2.5 w-full mt-6 text-left">
-                    <div className="p-2.5 rounded-xl bg-white border border-brand-border/80 flex items-center gap-2">
-                      <div className="w-8 h-8 rounded-lg bg-brand-orange-50 flex items-center justify-center shrink-0">
-                        <Heart className="w-4 h-4 text-brand-orange-600" />
+                  {/* 4 Patient Safety Principles from reference poster */}
+                  <div className="grid grid-cols-2 gap-2 w-full mt-4 text-left">
+                    <div className="p-2.5 rounded-xl bg-brand-orange-50/70 border border-brand-orange-100 flex items-center gap-2">
+                      <div className="w-7 h-7 rounded-lg bg-white flex items-center justify-center shrink-0 shadow-2xs">
+                        <Heart className="w-3.5 h-3.5 text-brand-orange-600" />
                       </div>
                       <div>
-                        <div className="text-xs font-bold text-brand-darkText">People First</div>
-                        <div className="text-[10px] text-brand-secondaryText">Empathetic care</div>
+                        <div className="text-xs font-bold text-brand-darkText">Listen</div>
+                        <div className="text-[10px] text-brand-secondaryText">Patient needs</div>
                       </div>
                     </div>
 
-                    <div className="p-2.5 rounded-xl bg-white border border-brand-border/80 flex items-center gap-2">
-                      <div className="w-8 h-8 rounded-lg bg-brand-orange-50 flex items-center justify-center shrink-0">
-                        <ShieldCheck className="w-4 h-4 text-brand-orange-600" />
+                    <div className="p-2.5 rounded-xl bg-brand-orange-50/70 border border-brand-orange-100 flex items-center gap-2">
+                      <div className="w-7 h-7 rounded-lg bg-white flex items-center justify-center shrink-0 shadow-2xs">
+                        <ShieldCheck className="w-3.5 h-3.5 text-brand-orange-600" />
                       </div>
                       <div>
-                        <div className="text-xs font-bold text-brand-darkText">Excellence</div>
+                        <div className="text-xs font-bold text-brand-darkText">Learn</div>
                         <div className="text-[10px] text-brand-secondaryText">Evidence based</div>
                       </div>
                     </div>
 
-                    <div className="p-2.5 rounded-xl bg-white border border-brand-border/80 flex items-center gap-2">
-                      <div className="w-8 h-8 rounded-lg bg-brand-orange-50 flex items-center justify-center shrink-0">
-                        <Award className="w-4 h-4 text-brand-copper" />
+                    <div className="p-2.5 rounded-xl bg-brand-orange-50/70 border border-brand-orange-100 flex items-center gap-2">
+                      <div className="w-7 h-7 rounded-lg bg-white flex items-center justify-center shrink-0 shadow-2xs">
+                        <Award className="w-3.5 h-3.5 text-brand-copper" />
                       </div>
                       <div>
-                        <div className="text-xs font-bold text-brand-darkText">Compassion</div>
-                        <div className="text-[10px] text-brand-secondaryText">Active listening</div>
+                        <div className="text-xs font-bold text-brand-darkText">Speak Up</div>
+                        <div className="text-[10px] text-brand-secondaryText">Clear diagnosis</div>
                       </div>
                     </div>
 
-                    <div className="p-2.5 rounded-xl bg-white border border-brand-border/80 flex items-center gap-2">
-                      <div className="w-8 h-8 rounded-lg bg-brand-orange-50 flex items-center justify-center shrink-0">
-                        <Star className="w-4 h-4 text-amber-500" />
+                    <div className="p-2.5 rounded-xl bg-brand-orange-50/70 border border-brand-orange-100 flex items-center gap-2">
+                      <div className="w-7 h-7 rounded-lg bg-white flex items-center justify-center shrink-0 shadow-2xs">
+                        <Star className="w-3.5 h-3.5 text-amber-500" />
                       </div>
                       <div>
-                        <div className="text-xs font-bold text-brand-darkText">Better Health</div>
-                        <div className="text-[10px] text-brand-secondaryText">Long-term wellbeing</div>
+                        <div className="text-xs font-bold text-brand-darkText">Partner</div>
+                        <div className="text-[10px] text-brand-secondaryText">Care together</div>
                       </div>
                     </div>
                   </div>
 
-                  <div className="mt-6 w-full pt-4 border-t border-brand-border/60 flex items-center justify-between text-xs">
-                    <span className="text-brand-secondaryText font-medium">OPD Consultations</span>
+                  <div className="mt-4 w-full pt-3 border-t border-brand-border/70 flex items-center justify-between text-xs">
+                    <span className="text-brand-secondaryText font-medium">Daily OPD Consultations</span>
                     <Link
                       href="/about/dr-rohith-reddy"
                       className="font-semibold text-brand-orange-700 hover:text-brand-orange-800 inline-flex items-center"

@@ -39,7 +39,7 @@ export default function AdminLoginPage() {
   };
 
   return (
-    <div className="min-h-[80vh] flex items-center justify-center py-16 px-4 bg-[#FFFCF8]">
+    <div className="min-h-[80vh] flex items-center justify-center py-16 px-4 bg-[#F8FAFC]">
       <div className="hospital-card p-8 sm:p-10 w-full max-w-md space-y-6">
         <div className="text-center space-y-2">
           <div className="relative w-24 h-24 mx-auto">
@@ -110,7 +110,7 @@ export default function AdminLoginPage() {
           </button>
         </form>
 
-        <div className="p-4 rounded-xl bg-[#FFF9F0] border border-brand-border text-[11px] text-brand-secondaryText space-y-1">
+        <div className="p-4 rounded-xl bg-[#F0F6FC] border border-brand-border text-[11px] text-brand-secondaryText space-y-1">
           <p className="font-bold text-brand-darkText">Authorized Access Only</p>
           <p>
             Demo staff credentials: Username <code className="font-mono bg-white px-1 py-0.5 rounded text-brand-darkText">admin</code>, Password <code className="font-mono bg-white px-1 py-0.5 rounded text-brand-darkText">hospital@2026</code>

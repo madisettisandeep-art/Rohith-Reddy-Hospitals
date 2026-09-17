@@ -25,7 +25,7 @@ export default function InstagramSection() {
   ];
 
   return (
-    <section className="py-16 sm:py-24 bg-[#FFFCF8]" id="social">
+    <section className="py-16 sm:py-24 bg-[#F8FAFC]" id="social">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-12 border-b border-brand-border/80">
           <div>

@@ -78,7 +78,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: '#F47A16',
+  themeColor: '#1D4ED8',
   width: 'device-width',
   initialScale: 1,
   maximumScale: 5,
@@ -94,7 +94,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/images/logo.png" type="image/png" />
       </head>
-      <body className="min-h-screen flex flex-col bg-[#FFFCF8] text-brand-darkText font-sans selection:bg-brand-orange-100 selection:text-brand-orange-900">
+      <body className="min-h-screen flex flex-col bg-[#F8FAFC] text-brand-darkText font-sans selection:bg-brand-orange-100 selection:text-brand-orange-900">
         <JsonLd />
         <AnnouncementBar />
         <Header />

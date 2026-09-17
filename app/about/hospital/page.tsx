@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function AboutHospitalPage() {
   return (
-    <div className="py-12 sm:py-20 bg-[#FFFCF8]">
+    <div className="py-12 sm:py-20 bg-[#F8FAFC]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
         {/* Breadcrumb */}
         <nav className="text-xs text-brand-secondaryText flex items-center gap-2">

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function SpecialitiesPage() {
   return (
-    <div className="py-12 sm:py-20 bg-[#FFFCF8]">
+    <div className="py-12 sm:py-20 bg-[#F8FAFC]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
         {/* Breadcrumb */}
         <nav className="text-xs text-brand-secondaryText flex items-center gap-2">
@@ -89,7 +89,7 @@ export default function SpecialitiesPage() {
         </div>
 
         {/* Note regarding administrative expansion */}
-        <div className="p-6 rounded-3xl bg-[#FFF9F0] border border-brand-border text-center text-xs text-brand-secondaryText max-w-2xl mx-auto space-y-1">
+        <div className="p-6 rounded-3xl bg-[#F0F6FC] border border-brand-border text-center text-xs text-brand-secondaryText max-w-2xl mx-auto space-y-1">
           <ShieldCheck className="w-5 h-5 text-brand-copper mx-auto mb-1" />
           <p className="font-semibold text-brand-darkText">Verified Outpatient Scope</p>
           <p>

@@ -10,7 +10,7 @@ export default function LocationSection() {
   const whatsappUrl = generateWhatsAppBookingUrl(hospitalSettings.whatsappNumber);
 
   return (
-    <section className="py-16 sm:py-24 bg-[#FFFDF9] border-y border-brand-border/60" id="location">
+    <section className="py-16 sm:py-24 bg-[#FFFFFF] border-y border-brand-border/60" id="location">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left: Location details & quick actions */}
@@ -89,7 +89,7 @@ export default function LocationSection() {
 
           {/* Right: High-Performance Lightweight Map Preview (Zero LCP penalty) */}
           <div className="lg:col-span-7">
-            <div className="relative rounded-3xl overflow-hidden border border-brand-beige shadow-card bg-[#FFF9F0] h-[400px] flex flex-col items-center justify-center p-6 text-center">
+            <div className="relative rounded-3xl overflow-hidden border border-brand-beige shadow-card bg-[#F0F6FC] h-[400px] flex flex-col items-center justify-center p-6 text-center">
               {loadInteractiveMap ? (
                 <iframe
                   title="Rohith Reddy Hospitals Location Map"

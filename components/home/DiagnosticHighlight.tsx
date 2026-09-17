@@ -4,7 +4,7 @@ import { HeartPulse, Droplet, Clock, CheckCircle, ShieldCheck, ArrowRight } from
 
 export default function DiagnosticHighlight() {
   return (
-    <section className="py-16 sm:py-24 bg-[#FFFCF8]" id="diagnostics">
+    <section className="py-16 sm:py-24 bg-[#F8FAFC]" id="diagnostics">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto space-y-3">
           <span className="badge-warm">Clinical Diagnostics</span>
@@ -113,7 +113,7 @@ export default function DiagnosticHighlight() {
         </div>
 
         {/* Responsible Medical Note */}
-        <div className="mt-10 p-4 rounded-2xl bg-[#FFF9F0] border border-brand-border text-center text-xs text-brand-secondaryText max-w-2xl mx-auto">
+        <div className="mt-10 p-4 rounded-2xl bg-[#F0F6FC] border border-brand-border text-center text-xs text-brand-secondaryText max-w-2xl mx-auto">
           <ShieldCheck className="w-4 h-4 text-brand-copper inline mr-1.5 -mt-0.5" />
           <span>
             Diagnostic testing is conducted strictly for outpatient clinical evaluation and primary monitoring.

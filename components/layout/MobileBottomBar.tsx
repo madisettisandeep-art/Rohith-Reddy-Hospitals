@@ -12,7 +12,7 @@ export default function MobileBottomBar() {
   return (
     <aside
       aria-label="Mobile Quick Actions"
-      className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#FFFCF8]/95 backdrop-blur-md border-t border-brand-border/90 px-3 py-2 shadow-lg"
+      className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#F8FAFC]/95 backdrop-blur-md border-t border-brand-border/90 px-3 py-2 shadow-lg"
     >
       <div className="grid grid-cols-4 gap-1 max-w-md mx-auto">
         <a

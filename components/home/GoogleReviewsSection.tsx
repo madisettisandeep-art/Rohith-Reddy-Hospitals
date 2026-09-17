@@ -23,7 +23,7 @@ export default function GoogleReviewsSection({
     : reviews.filter((r) => r.verifiedTheme === filter);
 
   return (
-    <section className="py-16 sm:py-24 bg-[#FFFDF9] border-y border-brand-border/60" id="reviews">
+    <section className="py-16 sm:py-24 bg-[#FFFFFF] border-y border-brand-border/60" id="reviews">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-12 border-b border-brand-border/80">

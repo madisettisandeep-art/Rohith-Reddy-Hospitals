@@ -26,7 +26,7 @@ export default function PatientExperience() {
   ];
 
   return (
-    <section className="py-16 sm:py-24 bg-[#FFFCF8]" id="experience">
+    <section className="py-16 sm:py-24 bg-[#F8FAFC]" id="experience">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-6 space-y-6">
@@ -42,7 +42,7 @@ export default function PatientExperience() {
               {experiences.map((exp) => (
                 <div
                   key={exp.title}
-                  className="p-4 rounded-2xl bg-[#FFF9F0] border border-brand-border/80 flex items-start gap-3.5"
+                  className="p-4 rounded-2xl bg-[#F0F6FC] border border-brand-border/80 flex items-start gap-3.5"
                 >
                   <div className="p-2 rounded-xl bg-white border border-brand-orange-200 shrink-0">
                     {exp.icon}

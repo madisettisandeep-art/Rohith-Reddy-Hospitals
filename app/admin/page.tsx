@@ -120,7 +120,7 @@ export default function AdminDashboardPage() {
   });
 
   return (
-    <div className="py-8 bg-[#FFFCF8] min-h-screen">
+    <div className="py-8 bg-[#F8FAFC] min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
         {/* Top Header */}
         <div className="hospital-card p-6 flex flex-col md:flex-row items-center justify-between gap-4">
@@ -241,7 +241,7 @@ export default function AdminDashboardPage() {
             <div className="hospital-card overflow-hidden">
               <div className="overflow-x-auto">
                 <table className="w-full text-left text-xs">
-                  <thead className="bg-[#FFF9F0] border-b border-brand-border text-brand-darkText font-display font-bold uppercase tracking-wider text-[10px]">
+                  <thead className="bg-[#F0F6FC] border-b border-brand-border text-brand-darkText font-display font-bold uppercase tracking-wider text-[10px]">
                     <tr>
                       <th className="px-4 py-3">Ref ID</th>
                       <th className="px-4 py-3">Patient</th>
